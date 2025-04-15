@@ -1,38 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Hello, World!</title>
-  <style>
-    body {
-      background-color: #f0f0f0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-
-    h1 {
-      font-family: 'Dancing Script', cursive; /* Fun cursive font */
-      font-size: 5em;
-      color: #ff6347; /* Orange color */
-      animation: bounce 1s infinite; /* Add bounce animation */
-    }
-
-    @keyframes bounce {
-      0%, 100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-20px);
-      }
-    }
-  </style>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Company Name]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 960px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        header h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        header p {
+            color: #777;
+        }
+        .project {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .project:last-child {
+            border-bottom: none;
+        }
+        .project h2 {
+            color: #34495e;
+            margin-bottom: 10px;
+        }
+        .project p {
+            color: #555;
+        }
+        .company-info {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            text-align: center;
+            color: #777;
+        }
+        .company-info p {
+            margin-bottom: 5px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
-  <h1>Hello, World!</h1>
+    <div class="container">
+        <header>
+            <h1>MUTANT PARTY KREW</h1>
+            <p>Crafting unique and engaging indie games.</p>
+        </header>
+
+        <section id="projects">
+            <h2>Our Projects</h2>
+
+            <div class="project">
+                <h3>SUPERMALL HERO</h3>
+                <p>[Brief description of Game 1 - genre, platform(s), key features, etc.]</p>
+                </div>
+
+            <div class="project">
+                <h3>ROCK HOPPER</h3>
+                <p>[Brief description of Game 2 - genre, platform(s), key features, etc.]</p>
+                </div>
+
+            </section>
+
+        <section class="company-info">
+            <h2>About Us</h2>
+            <p>[Short and sweet description of your indie game company - mission, values, etc.]</p>
+            <p>Based in Monterey Park, California.</p>
+            <p>Email: <a href="mailto:[Your Company Email]">[Your Company Email]</a></p>
+            </section>
+    </div>
 </body>
 </html>
